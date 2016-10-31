@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../views/partials/head %>
+ 
+</head>
+<body>
+<!-- The drawer is always open in large screens. The header is always shown,
+  even in small screens. -->
+<% include ../views/partials/header %>
+
+ 
+
+  <main class="mdl-layout__content">
+    <div class="page-content">
+            <!-- Your content goes here -->
+
+
+
+
+<div class="mdl-grid">
+
+  <% for(var i=0; i<projects.length; i++) {%>
+
+  
+  <% include ../views/partials/editform %>
+
+  
+   <% } %>
+
+  
+<div class="mdl-cell mdl-cell--4-col">
+
+<!--Partial new form-->
+<% include ../views/partials/newprojectform %>
+
+
+</div>
+
+  
+
+
+
+  <!--end grid-->
+</div>
+
+
+
+
+
+
+<!--<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+  <i class="material-icons">add</i>
+</button>-->
+
+
+<% include ../views/partials/olddisplay.ejs %>
+
+ 
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+ 
+
+
+  
+</div>
+
+
+
+
+
+    </div>
+  </main>
+</div>
+
+
+
+ 
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+<!--<ul class="projects">
+  <% for(var i=0; i<quotes.length; i++) {%>
+    <li class="quote">
+      <span><%= quotes[i].name %></span>
+      <span><%= quotes[i].quote %></span>
+    </li>
+  <% } %>
+  </ul>-->
+
+
+
+  
+ 
+
+ <!-- <form action="/quotes" method="POST">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="quote" name="quote">
+    <button type="submit">Submit</button>
+  </form>-->
+
+
+
+
+
+
+
+
+
+<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+
+</body>
+</html>

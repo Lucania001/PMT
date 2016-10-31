@@ -1,0 +1,152 @@
+<!--START col 4-->
+  <div class="mdl-cell mdl-cell--4-col">
+
+
+<!--START CARD-->
+   <div class="demo-card-square mdl-card mdl-shadow--2dp projectcard">
+
+
+    <!--//////////////FORM//////////////-->
+    <form class="newform" id="newform" action="" method="">
+      <fieldset id="<%= projects[i]._id %>" disabled>
+
+         <label class="lukelabel">Project Ref</label><br />
+         <input class="lukebutton <%= projects[i]._id %>" type="text" id="pname" name="ProjectRef" value="<%= projects[i].ProjectRef %>">
+
+         <label class="lukelabel">Project Name</label><br />
+         <input class="lukebutton <%= projects[i]._id %>" type="text" id="pname" name="Name" value="<%= projects[i].Name %>">
+
+      <label class="lukelabel">Application Type</label><br />
+  <select name="Type" class="lukeselect <%= projects[i]._id %>" value="">
+    <option selected="selected">
+      <%= projects[i].Type %>
+    </option>
+    <option value="Application Development">Application Development</option>
+    <option value="Infrastructure">Infrastructure</option>
+  </select><br />
+
+    <!--///////PROJECT NAME FIELD//////-->
+    <!--<input type="text" placeholder="Project Name" name="Name">-->
+    
+   
+    
+  <br />
+   <!-- <input type="text" placeholder="Project ID" name="ProjectId">-->
+
+   <!--////////Project MANAGER Field//////-->
+   <label class="lukelabel">Project Manager</label><br />
+   <input class="lukebutton <%= projects[i]._id %>" type="text" id="pmanager" name="Manager" value="<%= projects[i].Manager %>" ><br />
+
+
+    <!--<input type="text" placeholder="Project Manager" name="Manager">-->
+
+    <!--<input type="text" placeholder="Sponsor/ Business Owner" name="Owner">-->
+
+    <!--////////Business Owner Field//////-->
+   <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="sample3" name="Owner">
+    <label class="mdl-textfield__label" for="sample3">Business Owner/Sponsor</label>
+  </div><br />-->
+
+
+  <!--///////////BUsiness Owner/Sponsoer ////////-->
+  <label class="lukelabel">Business Owner/ Sponsor</label><br />
+  <input class="lukebutton <%= projects[i]._id %>" type="text" id="powner" name="Owner" value="<%= projects[i].Owner %>" ><br />
+
+
+  <!--////////RAG////////-->
+  <label class="lukelabel">RAG</label><br />
+  <select class="lukeselect <%= projects[i]._id %>" name="RAG" value="car">
+    <option selected="selected">
+      <%= projects[i].RAG %>
+    </option>
+    <option value="Red">Red</option>
+     <option value="Amber">Amber</option>
+     <option value="Green">Green</option>
+  </select>
+
+  <!--////////Approach-->
+  <label class="lukelabel">Approach</label><br />
+   <select class="lukeselect <%= projects[i]._id %>" name="Approach" value="car">
+    <option selected="selected">
+      <%= projects[i].Approach %>
+    </option>
+    <option value="Waterfall">Waterfall</option>
+     <option value="Agile">Agile</option>
+  </select>
+
+   <label class="lukelabel">Comments</label><br />
+     <textarea rows="5" class="<%= projects[i]._id %>" id="description" name="Description" value=""><%= projects[i].Description %></textarea>
+      <br />
+   
+
+
+  <!--<select name="Approach">
+    <option value="Waterfall">Waterfall</option>
+     <option value="Agile">Agile</option>
+  </select><br />-->
+
+
+
+
+    <br />
+
+    <!--<label class="lukelabel">Date Created</label><br />-->
+
+    
+
+    <p class="timestamp"><%= /*projects[i]._id.getTimestamp()*/ %></p>
+
+    <label class="lukelabel">Last Update</label><br />
+    <p class="timestamp"><%= projects[i].Time %></p>
+
+    
+    
+  </fieldset>
+   <button id="submitbutton<%= projects[i]._id %>" class="submitbutton" onclick="updateForm('<%= projects[i]._id %>')">Submit</button>
+  </form>
+
+
+  <!--/////////////END FORM /////////////-->
+
+
+
+
+
+
+
+
+
+
+  <div class="mdl-card__actions mdl-card--border">
+    <!--<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Update
+    </a>-->
+
+
+
+ <!--<input id="projectName" type="text" placeholder="Project Name" name="Name">-->
+  <button  onclick="updateFunction('<%= projects[i]._id %>')" id="updateButton" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect"> Update </button>
+
+
+   <!--///////DELETE BUTTON /////////-->
+    <button onclick="deleteFunction('<%= projects[i]._id %>')" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons" id="delete">delete</i>
+     
+    </button>
+
+  </div>
+
+
+  <div class="mdl-card__menu">
+
+
+   
+  </div>
+
+
+</div>
+<!--END CARD-->
+
+
+  </div><!--END cold -4-->

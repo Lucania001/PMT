@@ -1,0 +1,117 @@
+
+   <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" id="addprojectbutton" onclick="showForm()">
+  <i class="material-icons">add</i>
+</button>
+
+
+
+
+<!--START CARD-->
+   <div class="demo-card-square mdl-card mdl-shadow--2dp" id="newprojectform">
+
+
+    <!--//////////////FORM//////////////-->
+    <form class="" id="" action="/project" method="POST">
+      <fieldset>
+
+         <label class="lukelabel">Project Ref</label><br />
+         <input class="lukebuttonshow" type="text" id="pname" name="ProjectRef" value="">
+
+         <label class="lukelabel">Project Name</label><br />
+         <input class="lukebuttonshow" type="text" id="pname" name="Name" value="">
+
+      <label class="lukelabel">Application Type</label><br />
+  <select name="Type" class="lukeselectshow" value="">
+    
+    <option selected="selected" value="Application Development">Application Development</option>
+    <option value="Infrastructure">Infrastructure</option>
+  </select><br />
+
+    <!--///////PROJECT NAME FIELD//////-->
+    <!--<input type="text" placeholder="Project Name" name="Name">-->
+    
+   
+    
+  <br />
+   <!-- <input type="text" placeholder="Project ID" name="ProjectId">-->
+
+   <!--////////Project MANAGER Field//////-->
+   <label class="lukelabel">Project Manager</label><br />
+   <input class="lukebuttonshow" type="text" id="pmanager" name="Manager" value="" ><br />
+
+
+    <!--<input type="text" placeholder="Project Manager" name="Manager">-->
+
+    <!--<input type="text" placeholder="Sponsor/ Business Owner" name="Owner">-->
+
+    <!--////////Business Owner Field//////-->
+   <!--<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input class="mdl-textfield__input" type="text" id="sample3" name="Owner">
+    <label class="mdl-textfield__label" for="sample3">Business Owner/Sponsor</label>
+  </div><br />-->
+
+
+  <!--///////////BUsiness Owner/Sponsoer ////////-->
+  <label class="lukelabel">Business Owner/ Sponsor</label><br />
+  <input class="lukebuttonshow" type="text" id="powner" name="Owner" value="" ><br />
+
+
+  <!--////////RAG////////-->
+  <label class="lukelabel">RAG</label><br />
+  <select class="lukeselectshow" name="RAG" value="car">
+    
+    <option selected="selected" value="Red">Red</option>
+     <option value="Amber">Amber</option>
+     <option value="Green">Green</option>
+  </select>
+
+  <!--////////Approach-->
+  <label class="lukelabel">Approach</label><br />
+   <select class="lukeselectshow" name="Approach" value="car">
+   
+    <option selected="selected" value="Waterfall">Waterfall</option>
+     <option value="Agile">Agile</option>
+  </select>
+
+
+    <label class="lukelabel">Comments</label><br />
+     <textarea id="description" name="Description" placeholder="Comments"></textarea>
+      <br />
+   
+
+
+  <!--<select name="Approach">
+    <option value="Waterfall">Waterfall</option>
+     <option value="Agile">Agile</option>
+  </select><br />-->
+
+
+
+
+    <br />
+
+    
+
+    
+    
+  </fieldset>
+   <button id="" type="submit" class="submitbuttonnew">Submit</button>
+  </form>
+
+
+  <!--/////////////END FORM /////////////-->
+
+
+
+
+
+
+
+
+
+
+  
+
+
+</div>
+<!--END CARD-->

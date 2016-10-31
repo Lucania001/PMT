@@ -1,0 +1,160 @@
+
+.demo-card-square.mdl-card {
+  width: auto;
+  height: auto;
+}
+.lukebutton {
+   width: 80%;
+   display: block;
+   margin: 0 auto;
+    padding: 12px 20px;
+    /*margin: 8px 0;*/
+    box-sizing: border-box;
+    border: none;
+    text-align: center;
+}
+.lukebuttonshow {
+   width: 80%;
+   display: block;
+   margin: 0 auto;
+    padding: 12px 20px;
+    /*margin: 8px 0;*/
+    box-sizing: border-box;
+    text-align: center;
+}
+.lukeselect{
+  width: 80%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    /*margin-bottom: 10px;*/
+    display: block;
+    margin: 0 auto;
+    text-align-last:center;
+    background: none;
+    font-size: 14px;
+}
+.lukeselectshow{
+  width: 80%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    /*margin-bottom: 10px;*/
+    display: block;
+    margin: 0 auto;
+    text-align-last:center;
+    font-size: 14px;
+}
+.mdl-card__menu {
+  position: relative;
+  right: 0px;
+  top: 0px;
+  width: 50%;
+}
+.mdl-card__actions {
+  width: 100%;
+  margin-top: 10px;
+}
+.lukelabel{
+  text-align: center;
+  display: block;
+  margin: 5px 0px 0px 0px;
+  text-decoration: underline;
+  font-weight: 900;
+}
+.submitbutton{
+  display: block;
+  width: 80%;
+margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    /*margin: 8px 0;*/
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.submitbuttonnew{
+  display: block;
+  width: 80%;
+margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    /*margin: 8px 0;*/
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+}
+.timestamp{
+  text-align: center;
+}
+.width100{
+  width: 100%;
+}
+#newprojectform{
+  display: none;
+}
+#description{
+  display: block;
+  margin: 0 auto;
+      width: 80%;
+    border: none;
+    text-align: center;
+}
+.projectcard{
+  border: 1px solid orange;
+}
+.mdl-layout__header-row{
+  background-color: orange;
+}
+.mdl-layout__header .mdl-layout__drawer-button{
+  background-color: orange !important;
+}
+.mdl-button--fab.mdl-button--colored{
+  background-color: orange !important;
+}
+.red{
+  background-color: red;
+}
+.amber{
+  background-color: orange;
+}
+.green{
+  background-color: green;
+}
+
+/*RISK FORM*/
+.form-control{
+  width: 80%;
+  margin: 0 auto;
+}
+.form-group label{
+text-align: center;
+display: block;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+.btn-primary{
+      text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#hiddenform{
+  display: none;
+}
+.redpanel{
+  background-color: red !important;
+}
+.amberpanel{
+  background-color: orange !important;
+}
+.greenpanel{
+  background-color: green !important;
+}

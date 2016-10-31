@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../views/partials/head %>
+ 
+</head>
+<body>
+
+	<% include ../views/partials/header %>
+		<main class="mdl-layout__content">
+    		<div class="page-content">
+
+    			<div class="mdl-grid">
+  					<div class="mdl-cell mdl-cell--12-col">
+ 
+				
+
+
+
+  
+  						
+    			<!--Start Risks Table-->
+    			<div class="table-responsive">
+    				<table class="mdl-data-table mdl-js-data-table  mdl-shadow--2dp table" style="">
+					  <thead>
+					    <tr>
+					      <th class="mdl-data-table__cell--non-numeric">Risk ID</th>
+					      <th>Raised By</th>
+					      <th>Status</th>
+					      <th>Risk Title</th>
+                <th>Risk Description</th>
+                <th>Impact Description</th>
+                <th>Mitigating Action</th>
+                <th>Likelyhood</th>
+                <th>Impact</th>
+                <th>Risk Rating</th>
+                <th>Owner</th>
+                <th>Notes</th>
+                <th>Delete</th>
+					     
+					    </tr>
+					  </thead>
+					  <tbody>
+					  	<% for(var i=0; i<risks.length; i++) {%>
+					    <tr>
+					      <td class="mdl-data-table__cell--non-numeric"><%= risks[i].RiskID %></td>
+					      <td style="word-wrap: break-word" ><%= risks[i].RaisedBy %></td>
+					      <td><%= risks[i].Status %></td>
+					      <td><%= risks[i].RiskTitle %></td>
+					      <td><%= risks[i].RiskDescription %></td>
+					      <td><%= risks[i].ImpactDescription %></td>
+					      <td><%= risks[i].Mitigatingaction %></td>
+					      <td><%= risks[i].Likelyhood %></td>
+					      <td><%= risks[i].Impact %></td>
+					      <td><%= risks[i].RiskRating %></td>
+					      <td><%= risks[i].Owner %></td>
+					      <td><%= risks[i].Notes %></td>
+					      <td>
+					      	<button onclick="riskDelete('<%= risks[i]._id %>')" class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+					      	<i class="material-icons" id="delete">
+					      		delete
+					      	</i>
+					      	</button>
+					      </td>
+					      
+					    </tr>
+					    <% } %>
+					    
+					    
+					  </tbody>
+					</table>
+				</div>
+
+		
+					
+
+
+				</div><!--end md-12-->
+
+
+				<div class="mdl-cell mdl-cell--6-col" >
+					
+					<% include ../views/partials/newriskform %>
+					
+
+				</div>	
+
+
+
+
+
+
+
+
+				</div><!--End Grid-->
+    		</div>
+    	</main>	
+
+	</div>
+
+
+
+
+
+
+	<!--<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>-->
+<script src="main.js"></script>
+</body>
+</html>

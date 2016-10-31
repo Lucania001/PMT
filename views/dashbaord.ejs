@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ../views/partials/head %>
+ 
+</head>
+<body>
+
+	<% include ../views/partials/header %>
+		<main class="mdl-layout__content">
+    		<div class="page-content">
+
+    			<div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--6-col">
+
+
+            <!-- Square card -->
+  <% 
+
+           var amount =[]
+           var amounttwo =[]
+           var amountthree = []
+           for(var i=0; i<projects.length; i++) {
+
+            if (projects[i].RAG === "Red"){
+            amount.push(projects[i].RAG)
+          } else if (projects[i].RAG === "Amber"){
+            amounttwo.push(projects[i].RAG)
+          } else if (projects[i].RAG === "Green"){
+            amountthree.push(projects[i].RAG)
+          }
+
+          
+
+
+           } console.log(amount.length)
+
+
+
+           %>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">Risks Open</div>
+  <div class="panel-body">
+    <%= risks.length %>
+
+    <br />
+    <hr>
+    <div class="hiddennames">
+
+    <% for(var i=0; i<risks.length; i++) { %>
+
+           
+
+           Risk Name: <%= risks[i].RiskTitle %><br />
+
+           <% } %>
+         
+    </div> 
+    
+  </div>
+</div>
+  </div>
+
+  <div class="mdl-cell mdl-cell--6-col">
+<div class="panel panel-default">
+  <div class="panel-heading redpanel">Projects with Red RAG</div>
+  <div class="panel-body">
+    <%= amount.length %>
+    <br />
+    <hr>
+    <div class="hiddennames">
+
+    <% for(var i=0; i<projects.length; i++) {
+
+            if (projects[i].RAG === "Red"){ %>
+
+           Project Name: <%= projects[i].Name %><br />
+         <% } }%>
+    </div>     
+
+  </div>
+</div>
+  </div>
+   <div class="mdl-cell mdl-cell--6-col">
+<div class="panel panel-default">
+  <div class="panel-heading amberpanel">Projects with Amber RAG</div>
+  <div class="panel-body">
+    <%= amounttwo.length %>
+    <br />
+    <hr>
+    <div class="hiddennames">
+
+    <% for(var i=0; i<projects.length; i++) {
+
+            if (projects[i].RAG === "Amber"){ %>
+
+           Project Name: <%= projects[i].Name %><br />
+         <% } }%>
+    </div>  
+  </div>
+</div>
+  </div>
+   <div class="mdl-cell mdl-cell--6-col">
+<div class="panel panel-default">
+  <div class="panel-heading greenpanel">Projects with Green RAG</div>
+  <div class="panel-body">
+    <%= amountthree.length %>
+    <br />
+    <hr>
+    <div class="hiddennames">
+
+    <% for(var i=0; i<projects.length; i++) {
+
+            if (projects[i].RAG === "Green"){ %>
+
+           Project Name: <%= projects[i].Name %><br />
+         <% } }%>
+    </div>  
+  </div>
+</div>
+  </div>
+  					
+         
+
+			
+
+
+
+       
+				</div><!--End Grid-->
+    		</div>
+    	</main>	
+
+	</div>
+
+
+
+
+
+
+	<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
