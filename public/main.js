@@ -81,6 +81,7 @@ function riskDelete(pulledthrough){
 
 function updateForm(pulledthrough){
 
+
   var dataArray = $(".newform").serializeArray(),
     len = dataArray.length,
     dataObj = {};
@@ -107,9 +108,9 @@ for (i=0; i<len; i++) {
     'Type' : dataObj['Type'],
     'RAG' : dataObj['RAG'],
     'Approach' : dataObj['Approach'],
-    'Time' : d
-    //'Description' : dataObj['Description'],
-    //'ProjectRef' : dataObj['ProjectRef']
+    'Time' : d,
+    'Description' : dataObj['Description'],
+    'ProjectRef' : dataObj['ProjectRef']
     //'Owner': 'I find your lack of faith disturbing.'
   })
 })

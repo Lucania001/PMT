@@ -237,8 +237,8 @@ app.post('/editform', (req, res) => {
 
 
 app.put('/projects', (req, res) => {
-  db.collection('projects')
-  .findOneAndUpdate({_id: ObjectId(req.body.ID)}, {
+  console.log(req.body)
+  db.collection('projects').findOneAndUpdate({_id: ObjectId(req.body.ID)}, {
     $set: {
       Name: req.body.Name,
       Manager: req.body.Manager,
@@ -246,9 +246,9 @@ app.put('/projects', (req, res) => {
       Type : req.body.Type,
       RAG : req.body.RAG,
       Approach : req.body.Approach,
-      Time: req.body.Time
-      //Description: req.body.Description,
-      //ProjectRef: req.body.ProjectRef
+      Time: req.body.Time,
+      Description: req.body.Description,
+      ProjectRef: req.body.ProjectRef
       //Owner: req.body.Owner
     }
   }, {
